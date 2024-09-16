@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "gui-cpf-gerador",
+  "version": "1.0",
+  "description": "Extensão para gerar números aleatórios de CPF.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "gui-cpf-generator-icon-16x16.png",
+      "48": "gui-cpf-generator-icon-48x48.png",
+      "128": "gui-cpf-generator-icon-128x128.png"
+    }
+  },
+  "permissions": []
+}
