@@ -23,5 +23,16 @@ function gerarCPF() {
 
 document.getElementById('generate').addEventListener('click', () => {
   const cpf = gerarCPF();
-  document.getElementById('cpf').innerText = cpf;
+  document.getElementById('cpf').innerText = `CPF gerado: ${cpf}`;
+
+  // Copiar automaticamente para a área de transferência
+  navigator.clipboard.writeText(cpf).then(() => {
+      // Exibir mensagem no HTML
+      document.getElementById('message').innerText = 'CPF copiado para a área de transferência!';
+      document.getElementById('message').style.color = 'green';
+  }).catch(err => {
+      // Exibir mensagem de erro
+      document.getElementById('message').innerText = 'Erro ao copiar o CPF para a área de transferência.';
+      document.getElementById('message').style.color = 'red';
+  });
 });
