@@ -2,6 +2,12 @@
 ## Descrição
 A extensão Gerador de CPF para o Google Chrome permite gerar números de CPF aleatórios, tanto com a máscara padrão (XXX.XXX.XXX-XX) quanto sem máscara. A extensão também copia automaticamente o número gerado para a área de transferência e exibe uma mensagem de confirmação na interface.
 
+
+![image](https://i.imgur.com/PG0CBgo.png)
+![image2](https://i.imgur.com/yfMuc8s.png)
+![image3](https://i.imgur.com/F5h8Ksd.png)
+
+
 ## Funcionalidades
 - Gerar CPF com máscara: Cria um número de CPF no formato XXX.XXX.XXX-XX.
 - Gerar CPF sem máscara: Cria um número de CPF no formato XXXXXXXXXXX.
