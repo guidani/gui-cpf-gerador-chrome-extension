@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Gerador de CPF</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            width: 250px;
-            padding: 20px;
-            background-color: #f7f7f7;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h3 {
-            text-align: center;
-            color: #333;
-        }
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background-color: #45a049;
-        }
-        #cpf {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 20px;
-            text-align: center;
-            color: #333;
-            padding: 10px;
-            border: 1px solid #ddd;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-        #message {
-            margin-top: 15px;
-            font-size: 14px;
-            text-align: center;
-            color: #4CAF50;
-        }
-        .container {
-            text-align: center;
-        }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #888;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        width: 250px;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h3 {
+        text-align: center;
+        color: #333;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      .btn:hover {
+        background-color: #45a049;
+      }
+      #cpf {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+        color: #333;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      #message {
+        margin-top: 15px;
+        font-size: 14px;
+        text-align: center;
+        color: #4caf50;
+      }
+      .container {
+        text-align: center;
+      }
+      footer {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #888;
+      }
+      .footer-icons {
+        margin-top: 10px;
+      }
+      .footer-icons a {
+        color: #333;
+        text-decoration: none;
+        font-size: 24px;
+        transition: color 0.3s ease;
+      }
+      .footer-icons a:hover {
+        color: #000;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h3>Gerador de CPF</h3>
-        <button id="generateMasked" class="btn">Gerar CPF com máscara</button>
-        <button id="generateUnmasked" class="btn">Gerar CPF sem máscara</button>
-        <div id="cpf"></div>
-        <div id="message"></div>
+      <h3>Gerador de CPF</h3>
+      <button id="generateMasked" class="btn">Gerar CPF com máscara</button>
+      <button id="generateUnmasked" class="btn">Gerar CPF sem máscara</button>
+      <div id="cpf"></div>
+      <div id="message"></div>
     </div>
     <footer>
-        <p>Extensão para Chrome - CPF Generator</p>
+      <p>Extensão para Chrome - CPF Generator</p>
+      <div class="footer-icons">
+        <a href="https://github.com/guidani" target="_blank">
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            alt="GitHub"
+            width="30"
+            height="30"
+          />
+        </a>
+      </div>
     </footer>
     <script src="popup.js"></script>
-</body>
+  </body>
 </html>
